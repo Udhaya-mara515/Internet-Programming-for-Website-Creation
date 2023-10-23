@@ -1,0 +1,36 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
+
+    $Name = $_POST['Name'];
+    $EBnumber = $_POST['EBnumber'];
+
+
+
+    $servername = "localhost";
+    $username = "root";
+    $pass = "";
+    $database = "udhaya";
+
+
+    $connection = mysql_connect($servername, $username, $pass, $database);
+
+    if (!$connection) {
+        die("sorry,we failed to connect: " . myqli_connect_error());
+
+    }
+    else {
+        echo "Connectioon was successful";}
+
+        $sql = "INSERT INTO `EBinf` (`Name`, `EBnumber`) VALUES ('$Name','$EBnumber')";
+
+
+        $result = mysqli_query($connection, $sql);
+
+        if ($result) {
+            echo "Data inserted successfully";
+        }
+        else {
+            echo "Data not inserted successfully";
+        }
+    }
+    ?>
