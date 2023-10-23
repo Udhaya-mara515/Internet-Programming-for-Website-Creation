@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EB BILLING</title>
+        <style>
+            .box{
+                background-color: rgb(40, 251, 227);
+                width: 600px;
+                border: 2px solid black;
+                padding: 50px;
+                margin: 20px;    
+                    }        }
+        </style>
+    </head>
+    <body bgcolor="skybule">
+        <center>
+     <div class="box"><h1>EB BILLING</h1>
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" name="Name" placeholder="enter your name" id="Name" required/>
+            </div><br>
+            <div>
+                <label for="EBnumber">EBnumber</label>
+                <input type="int" name="EBnumber" placeholder="enter your EBnumber" id="EBnumber" required/>
+            </div><br>
+            <div><a href="user1.html" ><button>Login</button></a></div>
+            <div><a href="user2.html" ><button>Login</button></a></div>
+    </div>
+        </center>
+    </body>
+</html>
